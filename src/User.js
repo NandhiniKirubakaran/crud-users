@@ -1,6 +1,5 @@
 import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
-import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import Card from '@mui/material/Card';
 import { useState } from "react";
@@ -8,7 +7,7 @@ import { useState } from "react";
 
 
 
-export function User({ userdetails }) {
+export function User({ userdetails, deleteButton }) {
   // const userdetails = {
   //   name: "Harsitha A",
   //   id: "BW2022",
@@ -41,12 +40,13 @@ export function User({ userdetails }) {
                 <Badge badgeContent={disLike} color="error">🤔</Badge>
               </IconButton>
             </div>
-            <div className='button'>
+          
               <IconButton aria-label="edit" size="small">
                 <EditIcon fontSize="inherit" />
               </IconButton>
+              {deleteButton}
               
-            </div>
+            
           </div>
         </div>
       </Card>

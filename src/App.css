@@ -1,38 +1,49 @@
-.App {
+.profile{
+  height: 450px;
+  width: 250px;
   text-align: center;
+  margin: 50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-img{
+  border-radius: 50%;
+  height: 250px;
+  width: 200px;
+  margin: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-name, .profile-id, .profile-mail, .profile-position{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.all-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.users-list{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); */
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.add-user-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 1200px;
+  margin: 1rem auto;
+  gap: 0.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.not-found{
+margin-left: 150px;
+margin-top: 50px ;
+margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home{
+  text-align: center;
+  margin-top: 100px;
+}
+.gif-img{
+ margin-left: 575px;
 }
