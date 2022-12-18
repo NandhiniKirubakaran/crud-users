@@ -36,7 +36,7 @@ function App() {
         <Toolbar>
         <Button color="inherit" onClick={() => navigate ("/home")}>Home</Button>
         <Button color="inherit" onClick={() => navigate ("/userlist")}>UserList</Button>
-        <Button color="inherit" onClick={() => navigate ("/adduser")}>AddUser</Button>
+        <Button color="inherit" onClick={() => navigate ("/adduser/add")}>AddUser</Button>
         <Button 
         style={{marginLeft:"auto"}}
         startIcon ={ mode == "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
@@ -50,7 +50,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/userlist" element={<UserList />} />
-        <Route path="/adduser " element={<AddUser />} />
+        <Route path="/adduser/add" element={<AddUser />} />
         {/* <Route path="about" element={<About />} /> */}
       </Routes>
     </div>
